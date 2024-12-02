@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 컴파일 결과 생성되는 자바스크립트 코드의 버전을 설정하는 target 옵션
+    "module": "ESNext", // 변환되는 자바스크립트 코드의 모듈 시스템을 설정
+    "outDir": "dist", // 컴파일 결과 생성할 자바스크립트 코드의 위치를 결정
+    "strict": true, // 타입 검사 수준 설정
+    "strictNullChecks": true, // 엄격한 null 검사
+    "moduleDetection": "force", // 타입스크립트의 모든 파일은 기본적으로 전역 파일(모듈)로 취급함, 독립 모듈로 취급하는 옵션
+    "skipLibCheck": true // 타입 정의 파일(.d.ts)의 타입 검사를 생략하는 옵션
+  },
+  "ts-node": { "esm": true },
+  "include": ["src"] // tsc에게 컴파일 할 타입스크립트 파일의 범위와 위치를 알려주는 옵션
+}
