@@ -11,6 +11,7 @@ const employee = {
   },
 };
 
+// 타입스크립트의 클래스는 타입으로도 취급 가능함
 class Employee {
   // 필드
   name: string;
@@ -20,7 +21,7 @@ class Employee {
   // 생성자
   constructor(name: string, age: number, position: string) {
     this.name = name;
-    this.age = 35;
+    this.age = age;
     this.position = position;
   }
   // 메서드
@@ -45,6 +46,7 @@ class ExecutiveOfficer extends Employee {
   }
 }
 
+// 인스턴스
 const employeeB = new Employee("lbj", 35, "개발자");
 console.log(employeeB);
 
